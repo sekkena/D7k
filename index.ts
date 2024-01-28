@@ -4,6 +4,6 @@ interface Config {
   postfix?: string;
 }
 
-declare module "D7K" {
+declare module "D7k" {
   export function generateJoke(config: Config): string;
 }
