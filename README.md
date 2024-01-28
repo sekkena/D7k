@@ -3,7 +3,7 @@ D7k, Package That generates egyptian jokes for discord.js/guilded.js
 
 ## Install Package
 ```bash
-npm install D7K
+npm install D7k
 ```
 
 ## Usage
