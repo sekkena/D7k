@@ -39,5 +39,5 @@ client.on('messageCreate', message => {
 ```
 
 **If you have any joke you can suggest it in https://discord.gg/vms**
-**For any qustion or problem join server https://discord.gg/vms**
+**Any problem join server https://discord.gg/vms**
 **Copyrights to vampire_sekkena**
