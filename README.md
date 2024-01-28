@@ -3,7 +3,7 @@ D7k, Package That generates egyptian jokes for discord.js/guilded.js
 
 ## Install Package
 ```bash
-npm install D7k
+npm install d7k
 ```
 
 ## Usage
@@ -11,7 +11,7 @@ npm install D7k
 
 ## Example
 ```javascript
-const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`D7k`);
+const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`d7k`);
 console.log(generateLongJoke());
 console.log(generateShortJoke());
 console.log(hkmtElYom());
@@ -20,7 +20,7 @@ console.log(generateJoke());
 
 ## Discord.js
 ```javascript
-const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`D7k`);
+const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`d7k`);
 client.on("messageCreate", async message => {
   if (message.content.startsWith("gen-joke")) {
     const jokes = generateJoke();
@@ -34,7 +34,7 @@ client.on("messageCreate", async message => {
 
 ## Gulided.js
 ```javascript
-const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`D7k`);
+const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`d7k`);
 client.on('messageCreate', message => {
     if (message.content === 'gen-joke') {
     const jokes = generateJoke();
