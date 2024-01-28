@@ -1,5 +1,5 @@
 # D7k
-D7k, Package That generates egyptian jokes for discord.js/guilded.js/telegarm.js
+D7k, Package That generates egyptian jokes for discord.js/guilded.js
 
 ## Install Package
 ```bash
@@ -7,33 +7,41 @@ npm install D7K
 ```
 
 ## Usage
-> Generate egyptian jokes for discord.js/guilded.js/telegarm.js
+> Generate egyptian jokes for discord.js/guilded.js
 
 ## Example
 ```javascript
-const { jokegen, generateJoke } = require(`D7k`);
-console.log(jokegen());
+const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`D7k`);
+console.log(generateLongJoke());
+console.log(generateShortJoke());
+console.log(hkmtElYom());
 console.log(generateJoke());
 ```
 
 ## Discord.js
 ```javascript
-const { generateJoke } = require(`D7k`);
+const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`D7k`);
 client.on("messageCreate", async message => {
   if (message.content.startsWith("gen-joke")) {
     const jokes = generateJoke();
-    await message.reply({content: `**${jokes}**`});
+    const longjokes = generateLongJoke();
+    const shortjokes = generateShortJoke();
+    const hkmtElYomjoke = hkmtElYom();
+    await message.reply({content: `**${jokes}**\n${longjokes}\n${shortjokes}\n${hkmtElYomjoke}`});
  }
 });
 ```
 
 ## Gulided.js
 ```javascript
-const { generateJoke } = require(`D7k`);
+const { generateLongJoke, generateShortJoke, hkmtElYom, generateJoke } = require(`D7k`);
 client.on('messageCreate', message => {
     if (message.content === 'gen-joke') {
-       const jokes = generateJoke();
-        message.reply(jokes);
+    const jokes = generateJoke();
+    const longjokes = generateLongJoke();
+    const shortjokes = generateShortJoke();
+    const hkmtElYomjoke = hkmtElYom();
+    await message.reply({content: `**${jokes}**\n${longjokes}\n${shortjokes}\n${hkmtElYomjoke}`});
     }
 });
 ```
