@@ -176,7 +176,8 @@ const jokes = [
   "ليه في خرفان عليها خط أحمر؟ علشان دي خرفان قليلة الدسم",
   "ليه الفرخة معلقة عالحيطة صورة بيضة؟ بتتباهى بصورتها وهي صغيرة",         "أغرب حاجة حصلت لك لما فتحت التلاجة؟ إن كل ما افتحها الاقي حد فتح لي النور بتاعها من نفسه",   
   "أب سأل إبنه بتاخدو ضرب في مادة الرياضيات؟ قاله طبعا يا بابا، وفي التاريخ والجغرافيا والعربي والانجليزي، كله ضرب",   
-
+  "مره مكرونه اتخانقت مع جوزها قالتله sorry هروح اندومى",
+  "د صاحبهم الثالث وقال، قال إني ممكن أبيعهم لكم",   
   "قال الثاني، أنا كمان عندي فلوس كتير وممكن أشتري بيها سواء أمريكا الشمالية أو أمريكا الجنوبية",
   "ثلاثة أشخاص بيشربوا مخدرات، قاعدين مع بعض في سهرة، راح الأول قال، عندي فلوس كتير، وممكن بيها أشتري قارة أمريكا الشمالية كلها",   
   "واحد غبي حب يتشهر، عمل نفسه إرهابى راح خطف ابنه محدش سأل عن الولد، قام قتله", 
@@ -244,11 +245,11 @@ const jokes = [
 
 
 const generateLongJoke = () => {
-  const randomIndex = Math.floor(Math.random() * jokes.length);
+  const randomIndex = Math.floor(Math.random() * longjoke.length);
   return longjoke[randomIndex];
 };
 const generateShortJoke = () => {
-  const randomIndex = Math.floor(Math.random() * jokes.length);
+  const randomIndex = Math.floor(Math.random() * shortjoke.length);
   return shortjoke[randomIndex];
 };
 const generateJoke = () => {
@@ -256,7 +257,7 @@ const generateJoke = () => {
   return jokes[randomIndex];
 };
 const hkmtElYom = () => {
-  const randomIndex = Math.floor(Math.random() * jokes.length);
+  const randomIndex = Math.floor(Math.random() * hkmtElYom1.length);
   return hkmtElYom1[randomIndex];
 };
 
